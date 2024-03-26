@@ -24,13 +24,22 @@ public class Ex502 {
 	
 	//Circle
 	public static void circ(int a) {
-		System.out.println("Pizza size :" + 2 * a * 3.141592 + "inches: ");
+		String result = "Pizza circ:" + 2 * a * 3.141592 + "inches:";
+	    System.out.println(result);
+	}
+	public static void circ(double a) {
+		String result = "Pizza circ:" + 2 * a * 3.141592 + "inches:";
+	    System.out.println(result);
 	}
 	public static void area(int a) {
-		System.out.println("Pizza area: " + a * a* 3.141592 +"inches: ");
+		String result = "Pizza area: " + a * a* 3.141592 + "inches";
+		System.out.println(result);
 	
 	}
-	
+	public static void area(double a) {
+		String result = "Pizza area: " + a * a* 3.141592 + "inches";
+		System.out.println(result);
+	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int a = 15;
@@ -51,6 +60,11 @@ public class Ex502 {
 		circ(a);
 		area(a);
 		
+		circ(12); // int 매개변수
+		circ(1.24567); // double 매개변수
+		
+		float c = 12.345f;
+		circ(c);
 	}
 
 }
